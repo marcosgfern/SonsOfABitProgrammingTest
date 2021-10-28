@@ -4,14 +4,23 @@ using UnityEngine;
 
 public abstract class Item : ScriptableObject {
 
-    public GameObject uiPrefab;
+    public Sprite itemSprite;
     public string itemName;
     public int weight;
 
+    public void Initialize(Sprite itemSprite, string itemName, int weight) {
+        this.itemSprite = itemSprite;
+        this.itemName = itemName;
+        this.weight = weight;
+    }
+
+    public abstract Item GetClone();
 }
 
 public interface Deteriorable {
-    float Deteriorate();
+    Item Deteriorate();
+
+    float GetDurability();
 }
 
 public interface Sellable {
@@ -19,5 +28,5 @@ public interface Sellable {
 }
 
 public interface Usable {
-    void Use();
+    string UseMessage();
 }

@@ -9,13 +9,41 @@ public class Resource : Item, Deteriorable, Sellable {
 
     public int initialValue;
 
-    public float Deteriorate() {
+    public void Initialize(Sprite itemSprite,
+            string itemName,
+            int weight,
+            float deterioration,
+            float deteriorationRate,
+            int initialValue) {
+        base.Initialize(itemSprite, itemName, weight);
+        this.deterioration = deterioration;
+        this.deteriorationRate = deteriorationRate;
+        this.initialValue = initialValue;
+    }
+
+    public override Item GetClone() {
+        Resource clone = CreateInstance<Resource>();
+        clone.Initialize(this.itemSprite,
+            this.itemName,
+            this.weight,
+            this.deterioration,
+            this.deteriorationRate,
+            this.initialValue);
+
+        return clone;
+    }
+
+    public Item Deteriorate() {
         this.deterioration += this.deteriorationRate;
         if (this.deterioration > 1f) {
             this.deterioration = 1f;
         }
 
-        return this.deterioration;
+        return this;
+    }
+
+    public float GetDurability() {
+        return 1 - this.deterioration;
     }
 
     public int GetValue() {

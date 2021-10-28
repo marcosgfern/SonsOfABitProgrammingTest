@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 342d4b31196565249b436353c98adcb8, type: 3}
-  m_Name: StrengthPotion
+  m_Script: {fileID: 11500000, guid: bc2aa74a22357f6408eaf1d9d2704705, type: 3}
+  m_Name: Garbage
   m_EditorClassIdentifier: 
   uiPrefab: {fileID: 0}
-  itemName: Strength Potion
-  weight: 3
-  deterioration: 0
-  deteriorationRate: 0.3
-  useEffect: Your muscles double in size, but your hair is starting to fall off...
+  itemSprite: {fileID: 21300000, guid: 9ff3f1607698b3047802d1839103f208, type: 3}
+  itemName: Garbage
+  weight: 0
