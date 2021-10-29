@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+/** Works as an initializer for UI messages.
+ */
 public class UIMessage : MonoBehaviour {
 
     public TMP_Text messageTextWindow;

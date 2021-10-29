@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/** Class for inventory initialization.
+ * Used as a component for a dull player game object.
+ */
 public class EtherealPlayerController : MonoBehaviour {
 
     public InventoryUIController inventoryUIController;

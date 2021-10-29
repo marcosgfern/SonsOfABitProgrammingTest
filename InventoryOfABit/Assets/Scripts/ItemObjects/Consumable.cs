@@ -49,7 +49,6 @@ public class Consumable : Item, Deteriorable, Usable {
         } else {
             return this;
         }
-        
     }
 
     public float GetDurability() {

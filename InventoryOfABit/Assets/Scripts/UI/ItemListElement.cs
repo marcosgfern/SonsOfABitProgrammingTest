@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+/** Works as an initializer for the UI item list elements. 
+ */
 public class ItemListElement : MonoBehaviour {
 
     [SerializeField] private Image icon;

@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/** Component for the adding items menu.
+ * @availableItems: contains every item's ScriptableObject to use as templates.
+ */
 public class AddItemMenu : MonoBehaviour {
 
     public Item[] availableItems;

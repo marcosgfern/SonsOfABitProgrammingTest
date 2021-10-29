@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+/** Works as an initializer for UI item selection menu elements.
+ */
 public class ItemSelectionElement : MonoBehaviour {
 
     public Image itemIcon;

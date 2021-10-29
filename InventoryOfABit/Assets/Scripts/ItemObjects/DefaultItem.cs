@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/** Instantiable class for basic items with any extra attributes.
+ */
 [CreateAssetMenu(fileName = "New Default Item", menuName = "Inventory System/Items/Default Item")]
 public class DefaultItem : Item {
     public override Item GetClone() {

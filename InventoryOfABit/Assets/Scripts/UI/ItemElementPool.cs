@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/** Class for pooling implementation on item list elements, which enhances performance,
+ * (eventhough it's not necessary for this case).
+ */
 public class ItemElementPool : MonoBehaviour
 {
     public GameObject itemListElementPrefab;

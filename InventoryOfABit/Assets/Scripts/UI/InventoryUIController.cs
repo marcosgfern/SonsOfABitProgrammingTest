@@ -15,27 +15,23 @@ public class InventoryUIController : MonoBehaviour {
     private void Awake() {
         this.itemElementPool.SetUIController(this);
     }
+    public void SetInventory(Inventory inventory) {
+        this.inventory = inventory;
+    }
 
     public void ShowMessage(string message) {
         UIMessage uiMessageComponent = Instantiate(uiMessagePrefab, this.transform).GetComponent<UIMessage>();
         uiMessageComponent.SetMessageText(message);
     }
 
-    public void AdvanceTime() {
-        this.inventory.AdvanceTime();
-    }
-
-
-    //Item list --------------------------------------------
-
-    public void SetInventory(Inventory inventory) {
-        this.inventory = inventory;
-    }
-
     public void UpdateItemList() {
         this.itemElementPool.UpdateItemList(this.inventory.items);
 
         this.totalWeight.text = this.inventory.GetCurrentWeight() + "/" + this.inventory.maxWeight;
+    }
+
+    public void AdvanceTime() {
+        this.inventory.AdvanceTime();
     }
 
     public void Use(int index) {
