@@ -33,6 +33,7 @@ public class ItemListElement : MonoBehaviour {
         if (value == null) {
             this.value.enabled = false;
         } else {
+            this.value.enabled = true;
             this.value.text = "Value: " + value;
         }
     }
@@ -41,6 +42,7 @@ public class ItemListElement : MonoBehaviour {
         if (durability == null) {
             this.durability.enabled = false;
         } else {
+            this.durability.enabled = true;
             this.durability.text = "Durability: " + (int)(durability*100) + "%";
         }
     }
