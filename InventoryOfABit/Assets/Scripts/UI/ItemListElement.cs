@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ItemListElementDisplay : MonoBehaviour {
+public class ItemListElement : MonoBehaviour {
 
     [SerializeField] private Image icon;
     [SerializeField] private TMP_Text itemName;

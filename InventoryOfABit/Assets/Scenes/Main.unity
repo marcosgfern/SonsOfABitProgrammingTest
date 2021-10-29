@@ -1990,6 +1990,7 @@ GameObject:
   - component: {fileID: 1110661246}
   - component: {fileID: 1110661247}
   - component: {fileID: 1110661248}
+  - component: {fileID: 1110661249}
   m_Layer: 0
   m_Name: Content
   m_TagString: Untagged
@@ -2056,6 +2057,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 1
+--- !u!114 &1110661249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110661245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96fd972c82cb31742981be2b08c9987c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemListElementPrefab: {fileID: 3282748709362395623, guid: 7f7dc68a246fc894ca9f35baccdf6cab, type: 3}
+  initialSize: 8
 --- !u!1 &1113052572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2885,8 +2900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e75cb6176eaedd4d81fb38a0c4bb1e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemListElementPrefab: {fileID: 3282748709362395623, guid: 7f7dc68a246fc894ca9f35baccdf6cab, type: 3}
-  content: {fileID: 1110661245}
+  itemElementPool: {fileID: 1110661249}
   totalWeight: {fileID: 359728417}
   uiMessagePrefab: {fileID: 4820163340113194718, guid: becc898a4783a98498ae32d6015ebeef, type: 3}
 --- !u!1 &1993249596
