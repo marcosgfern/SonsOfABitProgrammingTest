@@ -1,5 +1,5 @@
 # SonsOfABitProgrammingTest
-Programming test for a job in Sons of A Bit Entertainment, S.L.
+Programming test for a job application at Sons of A Bit Entertainment, S.L.
 
 #### _Quick notes_
 _Not every class and method are commented, as their naming is already descripting of their function._
